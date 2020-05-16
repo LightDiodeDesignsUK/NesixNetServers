@@ -1,0 +1,15 @@
+body
+{
+    background-color:black; color:white;
+}
+.pageDivClass {
+    display:block;
+    border: solid gray;
+    font-size: 24px;
+    overflow: scroll;
+    background-color: aliceblue;
+    color: black;
+    width:inherit;
+    height:inherit;
+}
+ 

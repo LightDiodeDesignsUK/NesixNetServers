@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Neal's safe chat...</title>
+    <link rel="stylesheet" type="text/css" href="styles/Site.css">
+
+    <script src="Scripts/NSX_WebSockets.js"></script>
+
+</head>
+<body onload="<nsx command="checklogin();"</nsx>" onclose="CloseSocket();">
+    <table id="TopTable" style="display:table; width:100%; height:60px; position:fixed; top:4px; border-color:aqua; border-style:solid;">
+        <tr style=" display:table-row; border-color:yellow; border:solid; ">
+            <td>
+                <div id="statusDiv" style="display:table-cell; font-size:40px; background-color:darkblue; width:100%; height:100%; border-color:yellow; border:solid; ">Status</div>
+            </td>
+        </tr>
+    </table>
+    <table id="pageTable" style=" border:solid red; top:75px; overflow:scroll; max-height:70%; height:65%; left:2.5%; width:95%; display:table; position:fixed;  ">
+        <tr style="height:inherit; width:inherit; min-height:50%; max-height:50%; display:table-row;">
+            <td style="height:inherit;">
+                <div id="mainPageDiv" style="overflow:scroll; height:100%; width:100%;">Main </div>
+            </td>
+        </tr>
+    </table>
+    <table id="TextEntryandTimeTable" style="height:20%; width:100%; display:table; position:fixed; width:50%; bottom:10px; border-color:forestgreen; border:solid; ">
+        <tr style="height:50%;  display:table-row;" onkeypress="OnChatEnterPressed(event);">
+            <td style="display:table-cell;">
+                <textarea id="TypeTextIn" type="text" value=""></textarea>
+            </td>
+        </tr>
+        <tr style="height:50%; background-color:darkblue; display:table-row;">
+            <td height="100%" width="25%" style="background-color:blue; display:table-cell;">
+                <span id="DateTimeDiv" style="margin:auto;  display:table-cell; width:90%; font-size:24px; background-color:lightgoldenrodyellow; color:black;">12/34/55 44:55:66;</span>
+            </td>
+            <td height="100%" width="25%" style="height:100%; background-color:blue; display:table-cell;">
+                <span id="ActiveUsersDiv" style="height:100%;  display:table-cell; margin:auto; width:90%; font-size:24px; background-color:azure; color:black;">12/34/55 44:55:66;</span>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

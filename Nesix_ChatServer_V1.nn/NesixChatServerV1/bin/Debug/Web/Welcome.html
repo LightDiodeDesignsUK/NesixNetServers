@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>WELCOME to NesixChatV1.1</title>
+    <link rel="stylesheet" type="text/css" href="styles/Site.css">
+    <script src="Scripts/NSX_WelcomeWebSockets.js"></script>
+</head>
+<body>
+    <div style="position:absolute; top: 5px; font-size:100px; background-color:darkblue; width:1000px; height:250px;" id="statusDiv">
+        Status
+        <hr />
+
+        <form action="/ChatPagev1.1.html" method="post" id="UserDetailsForm" name="UserDetailsForm" style="font-size:large; margin:auto; text-align:center;">
+            <input id="NameTXT" style="zoom:1;" type="text" name="NameTXT" value="neal" /> Chat Name <hr />
+            <input id="PassTXT" style="zoom:1;" type="password" name="PassTXT" value="password" /> Password <hr />
+            <input id="SID"  type="text" name="SID" value="<nsx command="getnewsession();"></nsx>" /> SID <hr />
+            <input id="Room" style="zoom:1;" type="text" name="Room" value="Room:1" />Room Name
+            <hr />
+            <input id="Submit1" type="submit" value="submit" />
+        </form>
+        <div style="background-color:darkred;">
+            <button onclick="doLogonCheck();">Check.</button>cvnvncncvbncvncvnb
+            <hr /><hr />
+        </div>
+    </div>
+    <br />
+    
+    <div style="font-size:100px; background-color:saddlebrown; width:1000px; height:250px;" id="mainPageDiv">Main</div>
+</body>
+</html>
