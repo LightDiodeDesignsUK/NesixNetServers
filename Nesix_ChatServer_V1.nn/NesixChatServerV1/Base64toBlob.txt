@@ -1,0 +1,13 @@
+﻿fetch(base64)
+    .then(res => {
+      return res.blob();
+    })
+    .then(blob => {
+      console.log(blob);
+    });
+
+drunk bloke shouting at his mrs he was a sweet potato
+
+"I dont think youre even a man" she said to him 
+
+and he shouted back "well a yam..."
